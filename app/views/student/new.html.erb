@@ -1,0 +1,8 @@
+<h1>New Student</h1>
+
+
+<%= form_for @student, url: student_index_path do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :email %>
+  <%= f.submit "Create Student" %>
+<% end %>
